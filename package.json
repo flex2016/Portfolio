@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Taras Kurilo Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flex2016/Portfolio.git"
+  },
+  "author": "Taras Kurilo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flex2016/Portfolio/issues"
+  },
+  "homepage": "https://github.com/flex2016/Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

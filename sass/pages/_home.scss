@@ -3,3 +3,22 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-services{
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-primary, 0.781),
+      rgba($color-primary-light, 0.20)),
+      url(../img/contract.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transform: skewY(7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(-7deg);
+
+    //.section-services > *
+  }
+}

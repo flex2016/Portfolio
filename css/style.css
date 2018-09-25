@@ -112,8 +112,7 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: #000; }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -121,13 +120,19 @@ body {
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  color: #67a2e6; }
+  color: #000; }
 
 .btn--white {
   background-color: #fff;
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--blue {
+  background-color: #67a2e6;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #67a2e6; }
 
 .btn::after {
   content: "";
@@ -170,26 +175,44 @@ body {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    transition: all .2S;
-    outline-offset: 2rem; }
+    transition: all .2S; }
     .description__photo:hover {
-      outline: 1.5rem solid #a2f0f3;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
+.service-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 3.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .service-box__icon {
+    font-size: 6rem;
+    margin: 2rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #a2f0f3, #0d57c5);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .service-box:hover {
+    transform: translateY(-1.5rem); }
+  .service-box__text {
+    padding-bottom: 3rem; }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(103, 162, 230, 0.781), rgba(162, 240, 243, 0.2)), url(../img/hero.jpg);
+  background-image: linear-gradient(to left bottom, rgba(103, 162, 230, 0.781), rgba(162, 240, 243, 0.2)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    top: 2rem;
+    left: 2rem; }
   .header__logo {
-    height: 3.5rem; }
+    height: 10.5rem; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -227,3 +250,13 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-services {
+  padding: 20rem 0;
+  background-image: linear-gradient(to left bottom, rgba(103, 162, 230, 0.781), rgba(162, 240, 243, 0.2)), url(../img/contract.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transform: skewY(7deg);
+  margin-top: -10rem; }
+  .section-services > * {
+    transform: skewY(-7deg); }

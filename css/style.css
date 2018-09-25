@@ -172,7 +172,7 @@ body {
 .description {
   position: relative; }
   .description__photo {
-    width: 55%;
+    width: 32%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     transition: all .2S; }

@@ -12,6 +12,12 @@
     &__logo {
         width: 20rem;
         height: auto;
+        &:hover,
+        &:active {
+            color: $color-primary-light;
+            opacity: .7;
+            transform: translateY(-2px);
+        }
     }
 
     &__navigation {
@@ -38,7 +44,7 @@
             color: $color-black;
             background-color: $color-grey-light-2;
             text-decoration: none;
-
+            text-transform: uppercase;
             display: inline-block;
             transition: all .2s;
         }
@@ -52,7 +58,7 @@
     }
 
     &__copyright {
-        border-top: 1px solid $color-black;
+        border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         width: 80%;
         float: right;

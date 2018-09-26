@@ -43,7 +43,10 @@ body {
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #777;
+  margin-bottom: 1rem;
 }
 
 .paragraph {

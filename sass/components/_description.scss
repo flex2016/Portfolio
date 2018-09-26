@@ -6,6 +6,8 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
     border-radius: 2px;
     transition: all .2S;
+    margin-left: 15rem;
+
 
     &:hover {
       transform: scale(1.05) translateY(-.5rem);

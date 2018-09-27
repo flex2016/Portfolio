@@ -1,31 +1,31 @@
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: $color-grey-dark;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
 }
 
 .heading-primary {
-  color: $color-white;
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
+    color: $color-white;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
 
-  &--main {
-    display: block;
-    text-align: left;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: .5rem;
-    animation: moveInLeft 1s ease-out;
+    &--main {
+        display: block;
+        text-align: left;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        animation: moveInLeft 1s ease-out;
 
-    @include respond(phone) {
-            letter-spacing: 1rem;
-            font-family: 5rem;
-        }
-        /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */
+      @include respond(phone) {
+              letter-spacing: 1rem;
+              font-family: 5rem;
+          }
+          /*
+          animation-delay: 3s;
+          animation-iteration-count: 3;
+          */
   }
 
   &--sub {

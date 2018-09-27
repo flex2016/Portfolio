@@ -1,18 +1,26 @@
 .description {
   position: relative;
 
-  &__photo {
-    width: 32%;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-    border-radius: 2px;
-    transition: all .2S;
-    margin-left: 15rem;
+    &__photo {
+        display: block;
+        width: 40%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        transition: all .2S;
+        margin-left: 15rem;
+
+        @include respond(tab-port) {
+            position: relative;
+            width: 50%;
+            margin: 0 auto;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
 
 
-    &:hover {
-      transform: scale(1.05) translateY(-.5rem);
-      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-  }
-  }
+      &:hover {
+          transform: scale(1.05) translateY(-.5rem);
+          box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+    }
+    }
 
 }

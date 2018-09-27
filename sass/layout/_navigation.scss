@@ -27,7 +27,7 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-        opacity: .6;
+        opacity: .9;
 
         //transform: scale(80);
     }
@@ -63,7 +63,7 @@
         &:visited {
             display: inline-block;
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 400;
             padding: 1rem 2rem;
             color: $color-white;
             text-decoration: none;
@@ -81,7 +81,7 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: $color-primary;
+            color: $color-black;
             transform: translateX(1rem);
         }
     }

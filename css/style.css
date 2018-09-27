@@ -364,7 +364,7 @@ body {
   background-image: radial-gradient(#5095b4, #0d57c5);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  opacity: .6; }
+  opacity: .9; }
 
 .navigation__nav {
   height: 100vh;
@@ -391,7 +391,7 @@ body {
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
@@ -405,7 +405,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #a6cffd;
+  color: #000;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {

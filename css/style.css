@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,16 +52,28 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -56,13 +85,24 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: .5rem;
-    animation: moveInLeft 1s ease-out; }
+    animation: moveInLeft 1s ease-out;
+    /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */ }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: .3rem;
     animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -72,6 +112,12 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -353,6 +399,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -365,6 +419,14 @@ body {
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   opacity: .9; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -405,7 +467,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #000;
+  color: #0d57c5;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -458,6 +520,10 @@ body {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh); } }
   .header__logo-box {
     position: absolute;
     top: 2rem;
@@ -476,9 +542,12 @@ body {
   padding: 5rem 0;
   font-size: 1.5rem;
   color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 0rem; }
+    margin-bottom: 2rem; }
   .footer__logo {
     width: 20rem;
     height: auto; }
@@ -490,6 +559,10 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -513,12 +586,24 @@ body {
     width: 80%;
     float: right;
     color: #000; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none;
+        text-align: center; } }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -527,6 +612,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -562,7 +654,7 @@ body {
 
 .section-contact {
   padding: 15rem 0;
-  background-image: linear-gradient(to left, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)); }
+  background-image: linear-gradient(to right, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)); }
 
 .contact {
   background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9), 0%, rgba(238, 238, 238, 0.9), 40%, transparent 50%), url(../img/contact.jpg);

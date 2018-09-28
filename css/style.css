@@ -266,6 +266,8 @@ body {
     color: transparent; }
   .service-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  .service-box__text {
+    margin-bottom: 1.5rem; }
 
 .card {
   perspective: 150rem;
@@ -373,7 +375,7 @@ body {
       box-shadow: none; }
       .card__side--back {
         transform: rotateY(0);
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+        clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 100%); }
     .card:hover .card__side--front {
       transform: rotateY(0); }
     .card__details {
@@ -458,7 +460,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#5095b4, #0d57c5);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.9s cubic-bezier(0.86, 0, 0.07, 1);
   opacity: .9; }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
@@ -473,8 +475,9 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1500;
+  transform: translate(-50%, -50%);
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -483,7 +486,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 50%);
   list-style: none;
   text-align: center;
   width: 100%; }

@@ -4,21 +4,27 @@
       to left bottom,
       rgba($color-primary, 0.781),
       rgba($color-primary-light, 0.20)),
-      url(../img/hero.jpg);
+      url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 75vh);
   -webkit-clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 75vh);
 
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to left bottom,
+            rgba($color-primary, 0.781),
+            rgba($color-primary-light, 0.2)),
+        url(../img/hero.jpg);
+    }
+
   @include respond(tab-port) {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
-      background-image: linear-gradient(
-          to left bottom,
-          rgba($color-primary, 0.781),
-          rgba($color-primary-light, 0.20)),
-          url(../img/hero-small.jpg);
+
 
   }
 

@@ -561,17 +561,19 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/hero.jpg);
+  background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/hero.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
-      background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/hero-small.jpg); } }
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
@@ -695,18 +697,20 @@ body {
 
 .section-services {
   padding: 20rem 0;
-  background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/contract.jpg);
+  background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/contract-small.jpg);
   background-size: cover;
   background-position: bottom;
   transform: skewY(7deg);
   margin-top: -10rem; }
   .section-services > * {
     transform: skewY(-7deg); }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .section-services {
+      background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/contract.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .section-services {
       padding: 10rem 0;
-      background-position: left;
-      background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/contract-small.jpg); } }
+      background-position: left; } }
 
 .section-portfolio {
   background-color: #f7f7f7;
@@ -724,14 +728,16 @@ body {
       padding: 10rem 0; } }
 
 .contact {
-  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9), 0%, rgba(238, 238, 238, 0.9), 40%, transparent 50%), url(../img/contact.jpg);
+  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9), 0%, rgba(238, 238, 238, 0.9), 40%, transparent 50%), url(../img/contact-small.jpg);
   background-size: 100%;
   border-radius: 5rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   height: 65rem; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .contact {
+      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/contact.jpg); } }
   @media only screen and (max-width: 75em) {
     .contact {
-      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/contact-small.jpg);
       background-size: cover; } }
   .contact__form {
     width: 50%;

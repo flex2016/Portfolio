@@ -731,9 +731,6 @@ body {
     .contact {
       background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/contact.jpg);
       background-size: cover; } }
-  @media only screen and (max-width: 56.25em) {
-    .contact {
-      background-image: linear-gradient(285deg, to right, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%), url(../img/contact.jpg); } }
   .contact__form {
     width: 50%;
     padding: 6rem;

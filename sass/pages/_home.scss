@@ -80,14 +80,6 @@
 
     }
 
-    @include respond(tab-port) {
-        background-image: linear-gradient(285deg, to right,
-        rgba($color-white, .9) 0%,
-        rgba($color-grey-light-2, .9) 40%),
-        url(../img/contact.jpg);
-
-    }
-
     &__form {
         width: 50%;
         padding: 6rem;

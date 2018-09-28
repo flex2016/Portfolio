@@ -405,6 +405,9 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  @media only screen and (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -714,13 +717,23 @@ body {
 .section-contact {
   padding: 15rem 0;
   background-image: linear-gradient(to right, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)); }
+  @media only screen and (max-width: 56.25em) {
+    .section-contact {
+      padding: 10rem 0; } }
 
 .contact {
   background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9), 0%, rgba(238, 238, 238, 0.9), 40%, transparent 50%), url(../img/contact.jpg);
   background-size: 100%;
   border-radius: 5rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  height: 70rem; }
+  height: 65rem; }
+  @media only screen and (max-width: 75em) {
+    .contact {
+      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/contact.jpg);
+      background-size: cover; } }
+  @media only screen and (max-width: 56.25em) {
+    .contact {
+      background-image: linear-gradient(285deg, to right, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%), url(../img/contact.jpg); } }
   .contact__form {
     width: 50%;
     padding: 6rem;

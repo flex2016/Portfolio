@@ -43,11 +43,16 @@
 }
 
 .section-contact {
-  padding: 15rem 0;
-  background-image: linear-gradient(
-      to right ,
-      rgba($color-primary, 0.781),
-      rgba($color-primary-light, 0.20));
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to right ,
+        rgba($color-primary, 0.781),
+        rgba($color-primary-light, 0.20));
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
 
 
 }
@@ -61,8 +66,27 @@
     background-size: 100%;
     border-radius: 5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    height: 70rem;
+    height: 65rem;
 
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(285deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-grey-light-2, .9) 40%,
+        transparent 65%) ,
+        url(../img/contact.jpg);
+        background-size: cover;
+
+
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(285deg, to right,
+        rgba($color-white, .9) 0%,
+        rgba($color-grey-light-2, .9) 40%),
+        url(../img/contact.jpg);
+
+    }
 
     &__form {
         width: 50%;

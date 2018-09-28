@@ -14,6 +14,12 @@
   @include respond(tab-port) {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+      background-image: linear-gradient(
+          to left bottom,
+          rgba($color-primary, 0.781),
+          rgba($color-primary-light, 0.20)),
+          url(../img/hero-small.jpg);
+
   }
 
   @include respond(phone) {

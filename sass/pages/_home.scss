@@ -27,6 +27,11 @@
     @include respond(tab-port) {
         padding: 10rem 0;
         background-position: left;
+        background-image: linear-gradient(
+            to left bottom,
+            rgba($color-primary, 0.781),
+            rgba($color-primary-light, 0.20)),
+            url(../img/contract-small.jpg);
     }
 }
 
@@ -74,7 +79,7 @@
         rgba($color-white, .9) 0%,
         rgba($color-grey-light-2, .9) 40%,
         transparent 65%) ,
-        url(../img/contact.jpg);
+        url(../img/contact-small.jpg);
         background-size: cover;
 
 

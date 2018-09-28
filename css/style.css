@@ -570,7 +570,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); } }
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+      background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/hero-small.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
@@ -704,7 +705,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-services {
       padding: 10rem 0;
-      background-position: left; } }
+      background-position: left;
+      background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/contract-small.jpg); } }
 
 .section-portfolio {
   background-color: #f7f7f7;
@@ -729,7 +731,7 @@ body {
   height: 65rem; }
   @media only screen and (max-width: 75em) {
     .contact {
-      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/contact.jpg);
+      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/contact-small.jpg);
       background-size: cover; } }
   .contact__form {
     width: 50%;

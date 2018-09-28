@@ -281,6 +281,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -560,13 +561,16 @@ body {
   transform: rotate(-135deg); }
 
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+      height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(80, 149, 180, 0.2)), url(../img/hero.jpg); } }

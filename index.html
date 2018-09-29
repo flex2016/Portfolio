@@ -6,10 +6,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
 
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
         <link rel="shortcut icon" type="image/png" href="img/logo-small.png">
 
         <title>Taras Kurilo | Portfolio</title>
@@ -34,7 +34,7 @@
                     </ul>
             </nav>
         </div>
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__logo-box">
                 <img src="img/logo-small.png" alt="Logo" class="header__logo">
             </div>
@@ -43,7 +43,7 @@
                     <span class="heading-primary--main">.hello</span>
                     <span class="heading-primary--sub">Web Developer/Designer</span>
                 </h1>
-                <a href="#" class= "btn btn--white btn--animated">View My Portfolio</a>
+                <a href="#section-portfolio" class= "btn btn--white btn--animated">View My Portfolio</a>
             </div>
         </header>
         <main>
@@ -74,6 +74,11 @@
                 </div>
             </section>
             <section class="section-services" id="section-services">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                            Services
+                    </h2>
+                </div>
                 <div class="row">
                     <div class="col-1-of-3">
                         <div class="service-box">
@@ -84,7 +89,7 @@
                                 then you need something that's fast to load, looks professional and most of all, just works.
                                 That's exactly what I offer whether it's a simple HTML and CSS site to a WordPress blog.
                             </p>
-                            <a href="#" class= "btn btn--blue btn--animated">Contact</a>
+                            <a href="#section-contact" class= "btn btn--blue btn--animated">Contact</a>
                         </div>
                     </div>
                     <div class="col-1-of-3">
@@ -94,7 +99,7 @@
                             <p class="service-box__text">
                                 Create the perfect design to fit you and your business.
                             </p>
-                            <a href="#" class= "btn btn--blue btn--animated">Contact</a>
+                            <a href="#section-contact" class= "btn btn--blue btn--animated">Contact</a>
                         </div>
                     </div>
                     <div class="col-1-of-3">
@@ -105,14 +110,14 @@
                                     No matter if your shop sells a couple of items a year or takes 100+ orders a day, you need something that's scalable and easy to manage.
                                     That's exactly what I offer with Woocommerce, Shopify, Magento, BigCommerce.
                             </p>
-                            <a href="#" class= "btn btn--blue btn--animated">Contact</a>
+                            <a href="#section-contact" class= "btn btn--blue btn--animated">Contact</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section-portfolio" id="section-portfolio">
+            <section class="section-portfolio">
                 <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
+                    <h2 class="heading-secondary" id="section-portfolio">
                         Portfolio
                     </h2>
                 </div>
@@ -145,8 +150,8 @@
                                         <p class="card__description">Find Interesting Places near you!</p>
                                         <p class="card__description--small">Mini App</p>
                                     </div>
-                                    <a href="#" class="btn btn--white u-margin-bottom-medium">Visit Site!</a>
-                                    <a href="#" class="btn btn--white fab fa-github ">View On GitHub</a>
+                                    <a href="http://interestingplaces.tk/" target="blank" class="btn btn--white u-margin-bottom-medium">Visit Site!</a>
+                                    <a href="https://github.com/flex2016/learning-flask" target="blank" class="btn btn--white fab fa-github ">View On GitHub</a>
                                 </div>
                             </div>
                        </div>
@@ -182,8 +187,8 @@
                                         <p class="card__description">Ecommerce Site Build on magento platform.</p>
                                         <p class="card__description--small">Designershopp.com</p>
                                     </div>
-                                    <a href="#" class="btn btn--white u-margin-bottom-medium">Visit Site!</a>
-                                    <a href="#" class="btn btn--white fab fa-github ">View On GitHub</a>
+                                    <a href="https://www.designershopp.com/" target= "blank" class="btn btn--white u-margin-bottom-medium">Visit Site!</a>
+                                    <a href="https://www.designershopp.com/" target= "blank" class="btn btn--white fab fa-github ">View On GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -219,8 +224,8 @@
                                         <p class="card__description">Create, Edit, Delete Restaurants & Menu Items.</p>
                                         <p class="card__description--small">Application</p>
                                     </div>
-                                    <a href="#" class="btn btn--white u-margin-bottom-medium">Visit Site!</a>
-                                    <a href="#" class="btn btn--white fab fa-github ">View On GitHub</a>
+                                    <a href="https://github.com/flex2016/Restaurant_Menu_Flask_Blueprints" target= "blank" class="btn btn--white u-margin-bottom-medium">Visit Site!</a>
+                                    <a href="https://github.com/flex2016/Restaurant_Menu_Flask_Blueprints" target="blank" class="btn btn--white fab fa-github ">View On GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -260,27 +265,38 @@
         </main>
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-small.png" alt="Full logo" class="footer__logo">
+                <a href="#header"><img src="img/logo-small.png" alt="Full logo" class="footer__logo"></a>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link fab fa-linkedin">LinkedIn</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link fab fa-github">Git</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                            <li class="footer__item"><a href="https://www.linkedin.com/in/taras-kurilo-4a922613a/" target="_blank" class="footer__link fab fa-linkedin"> LinkedIn</a></li>
+                            <li class="footer__item"><a href="https://github.com/flex2016" target="_blank" class="footer__link fab fa-github"> Git</a></li>
+                            <li class="footer__item"><a href="#section-contact" class="footer__link fas fa-envelope"> Contact</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link fas fa-user-secret"> Privacy policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link fas fa-file-alt"> Terms</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Built by <a href="#" class="footer__link">Taras Kurilo</a>&copy; 2018.
+                        Built by <a href="#section-about" class="footer__link">Taras Kurilo</a>&copy; 2018.
                     </p>
                 </div>
             </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script>
+         (function () {
+            // cache DOM element
+            const nav = document.querySelector('.navigation')
+            const navCheck = nav.querySelector('#navi-toggle')
+            const navLinks = nav.querySelectorAll('.navigation__link')
+
+            // on link click, toggle checkbox 'checked' state
+            navLinks.forEach(link =>
+                link.addEventListener('click', _ => navCheck.checked = false))
+            })()
+        </script>
     </body>
 </html>

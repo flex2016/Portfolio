@@ -27,7 +27,7 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, $color-primary, $color-primary-light);
             }
 
             &-2 {
@@ -60,20 +60,34 @@
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
 
+
+
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-secondary-dark),
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
             url(../img/interesting-places.jpg);
         }
 
         &--2 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-primary-light),
+            url(../img/speedbook.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+            url(../img/realestate.jpg);
+        }
+
+        &--4 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
             url(../img/designershopp.jpg);
         }
 
-        &--3 {
+        &--5 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-primary-light),
             url(../img/restaurants.jpg);
         }
+
+
     }
 
     &__heading {

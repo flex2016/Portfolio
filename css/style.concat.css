@@ -523,6 +523,11 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none; }
+
 .description {
   position: relative; }
   .description__photo {

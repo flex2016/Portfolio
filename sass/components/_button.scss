@@ -97,3 +97,10 @@
       transform: translateY(0);
   }
 }
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+
+}

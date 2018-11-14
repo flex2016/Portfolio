@@ -36,17 +36,17 @@
                 "@context": "http://schema.org/",
                 "@type": "Review",
                 "itemReviewed": {
-                "@type": "Thing",
-                "name": "Taraskurilo.com"
+                    "@type": "Service",
+                    "name": "Taraskurilo.com"
                 },
                 "author": {
-                "@type": "Person",
-                "name": "Joe Smith"
+                    "@type": "Person",
+                    "name": "Joe Smith"
                 },
                 "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
                 }
             }
         </script>
@@ -65,10 +65,15 @@
                 "image": "https://taraskurilo.com/img/portrait.png",
                 "jobTitle": "Web Developer",
                 "name": "Taras Kurilo",
+                "alumniOf": "Umass Boston",
                 "url": "https://www.taraskurilo.com",
                 "sameAs": [
                     "https://www.linkedin.com/in/taras-kurilo-4a922613a/",
                     "https://plus.google.com/106437617603533510597"
+                ],
+                "colleague": [
+                    "http://perundesign.com/",
+                    "https://iperun23.github.io/"
                 ]
             }
         </script>
@@ -79,12 +84,23 @@
                 "@type": "WebSite",
                 "@id":"#website",
                 "url": "https://taraskurilo.com/",
-                "name":"Taras Kurilo | Web Developer, Designer SEO Eccomerce in USA &amp; Stoughton",
+                "name":"Taras Kurilo | Web Developer, Designer, SEO & Eccomerce in USA &amp; Stoughton",
+                "description": "I build bespoke websites to help my clients push their businesses further online.",
+                "publisher": "Taras Kurilo",
                 "potentialAction": {
                     "@type": "SearchAction",
                     "target": "http://taraskurilo.com/search?&q={query}",
                     "query-input": "required name=query"
                 }
+            }
+        </script>
+        <!-- Google Structured Data Logo Schema -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "https://www.taraskurilo.com",
+                "logo": "https://taraskurilo.com/img/logo-small.png"
             }
         </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->

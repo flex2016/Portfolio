@@ -327,6 +327,8 @@ body {
       background-image: linear-gradient(to right bottom, #9ad4f0, #0d57c5), url(../img/designershopp.jpg); }
     .card__picture--5 {
       background-image: linear-gradient(to right bottom, #7ed56f, #9ad4f0), url(../img/restaurants.jpg); }
+    .card__picture--6 {
+      background-image: linear-gradient(to right bottom, #9ad4f0, #0d57c5), url(../img/orysyakurilo.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -749,7 +751,7 @@ body {
       padding: 10rem 0; } }
 
 .contact {
-  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9), 0%, rgba(238, 238, 238, 0.9), 40%, transparent 50%), url(../img/pencontact-small.jpg);
+  background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9), 0%, rgba(238, 238, 238, 0.9), 40%, transparent 50%), url(../img/phone.jpg);
   background-size: 100%;
   border-radius: 5rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -757,7 +759,7 @@ body {
   background-position: right; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .contact {
-      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/pencontact.jpg); } }
+      background-image: linear-gradient(285deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 238, 238, 0.9) 40%, transparent 65%), url(../img/phone.jpg); } }
   @media only screen and (max-width: 75em) {
     .contact {
       background-size: cover; } }

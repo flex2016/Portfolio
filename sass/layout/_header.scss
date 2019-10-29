@@ -3,45 +3,43 @@
   background-image: linear-gradient(
       to left bottom,
       rgba($color-primary, 0.781),
-      rgba($color-primary-light, 0.20)),
-      url(../img/hero-small.jpg);
+      rgba($color-primary-light, 0.2)
+    ),
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
 
-
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 75vh);
-        clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 75vh);
-        height: 95vh;
-    }
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+    height: 95vh;
+  }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-            only screen and (min-width: 125em) {
-        background-image: linear-gradient(
-            to left bottom,
-            rgba($color-primary, 0.781),
-            rgba($color-primary-light, 0.2)),
-        url(../img/hero.jpg);
-    }
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to left bottom,
+        rgba($color-primary, 0.781),
+        rgba($color-primary-light, 0.2)
+      ),
+      url(../img/hero.jpg);
+  }
 
   @include respond(tab-port) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
-
-
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
   }
 
   @include respond(phone) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   }
-
 
   &__logo-box {
     position: absolute;
-    top : 2rem;
-    left : 2rem;
+    top: 2rem;
+    left: 2rem;
   }
 
   &__logo {

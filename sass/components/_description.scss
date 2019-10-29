@@ -1,26 +1,24 @@
 .description {
   position: relative;
 
-    &__photo {
-        display: block;
-        width: 40%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 2px;
-        transition: all .2S;
-        margin-left: 15rem;
+  &__photo {
+    display: block;
+    width: 80%;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    // border-radius: 2px;
+    // transition: all 0.2s;
+    margin-left: 5rem;
 
-        @include respond(tab-port) {
-            position: relative;
-            width: 50%;
-            margin: 0 auto;
-            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
-        }
-
-
-      &:hover {
-          transform: scale(1.05) translateY(-.5rem);
-          box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-    }
+    @include respond(tab-port) {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      // box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
     }
 
+    // &:hover {
+    //   transform: scale(1.05) translateY(-0.5rem);
+    //   box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+    // }
+  }
 }

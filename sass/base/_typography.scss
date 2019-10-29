@@ -1,28 +1,28 @@
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-grey-dark;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
 }
 
 .heading-primary {
-    color: $color-white;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
+  color: $color-white;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
 
-    &--main {
-        display: block;
-        text-align: left;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: .5rem;
-        animation: moveInLeft 1s ease-out;
+  &--main {
+    display: block;
+    text-align: left;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    animation: moveInLeft 1s ease-out;
 
-      @include respond(phone) {
-              letter-spacing: 1rem;
-              font-family: 5rem;
-          }
-          /*
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-family: 5rem;
+    }
+    /*
           animation-delay: 3s;
           animation-iteration-count: 3;
           */
@@ -32,31 +32,35 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     animation: moveInRight 1s ease-out;
 
     @include respond(phone) {
-        letter-spacing: .5rem;
+      letter-spacing: 0.5rem;
     }
   }
 }
 
-.heading-secondary{
+.heading-secondary {
   font-size: 3.5rem;
 
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 
   @include respond(tab-port) {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 
   @include respond(phone) {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -73,6 +77,6 @@ body {
   font-size: $default-font-size;
 
   &:not(:last-child) {
-      margin-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 }

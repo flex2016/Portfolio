@@ -1059,3 +1059,130 @@ body {
     @media only screen and (max-width: 56.25em) {
       .contact__form {
         width: 100%; } }
+
+#leftRight {
+  animation: scaleDown 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#lock {
+  animation: hideshow 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#messageBig {
+  animation: hideshow 10s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#messageSmall {
+  animation: hideshow 3s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#glasses {
+  animation: kaboom 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#phone {
+  animation: kaboomSmall 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#leftCircle {
+  animation: rotate 10s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#bottomCircle {
+  animation: rotate 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#upperCircle {
+  animation: rotate 20s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#left {
+  animation: left 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#right {
+  animation: right 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(359deg); } }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+@keyframes hideshow {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes kaboom {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes kaboomSmall {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.04); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes popup {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-170px); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes left {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(-20px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes right {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0px); } }

@@ -870,7 +870,9 @@ body {
   background-image: linear-gradient(to left bottom, rgba(166, 207, 253, 0.781), rgba(154, 212, 240, 0.2)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  width: 0;
+  opacity: 0; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);

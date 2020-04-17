@@ -2,7 +2,6 @@
   background-color: rgba($color-white, 0.8);
   font-size: 1.5rem;
   padding: 3.5rem;
-  margin: 20rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
@@ -10,7 +9,6 @@
 
   @include respond(tab-port) {
     padding: 3rem;
-    margin: 0;
   }
 
   &__icon {

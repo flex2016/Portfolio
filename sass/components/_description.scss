@@ -22,3 +22,59 @@
     // }
   }
 }
+
+#leftRight {
+  animation: scaleDown 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#lock {
+  animation: hideshow 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#messageBig {
+  animation: hideshow 10s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#messageSmall {
+  animation: hideshow 3s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#glasses {
+  animation: kaboom 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#phone {
+  animation: kaboomSmall 5s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#leftCircle {
+  animation: rotate 10s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#bottomCircle {
+  animation: rotate 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#upperCircle {
+  animation: rotate 20s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#left {
+  animation: left 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#right {
+  animation: right 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
